@@ -6,7 +6,7 @@ from itertools import groupby
 
 from psycopg2 import sql
 
-from odoo import _, models
+from odoo import models
 from odoo.exceptions import UserError
 
 
@@ -42,7 +42,7 @@ class ProductTemplate(models.Model):
                 products.invalidate_recordset(fnames=[field_name])
             else:
                 raise UserError(
-                    _(
+                    self.env._(
                         "You cannot change the unit of measure of a product "
                         "to a new unit that doesn't have the same category "
                         "and factor"
