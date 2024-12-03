@@ -3,18 +3,15 @@
 
 {
     "name": "Product Template Tags",
-    "summary": "This addon allow to add tags on products",
-    "version": "16.0.1.1.0",
+    "summary": """
+        MODULE DEPRECATED:
+            Use Odoo 18.0 built-in `product.tag` authorization header
+    """,
+    "version": "18.0.1.0.0",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV, Odoo Community Association (OCA), Numigi",
     "website": "https://github.com/OCA/product-attribute",
     "depends": ["product"],
-    "data": [
-        "security/product_template_rule.xml",
-        "security/product_template_tag.xml",
-        "views/product_product.xml",
-        "views/product_template.xml",
-        "views/product_template_tag.xml",
-    ],
+    "data": [],
     "maintainers": ["patrickrwilson", "ivantodorovich"],
 }
